@@ -12,29 +12,43 @@ button {
 
 /* Inicio del codigo */
 
-.principal {
-    border-color: yellowgreen;
-    border-style: solid;
+/* header */
+header {
+    background-color: #21C08B;
 }
 
-.principal p:nth-child(2n) {
-    color: blue;
+header nav {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
 }
 
-.principal p:nth-child(2n+1) {
-    color: orange;
+header nav img {
+    height: 100px;
 }
 
-.principal p::first-letter {
-    color: red;
+header nav ul {
+    list-style: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
 }
 
-.principal .caja {
-    width: 50px;
-    height: 50px;
-    background-color: sienna;
-    border-color: teal;
-    border-style: solid;
-    border-width: 5px;
-    padding: 100px;
+/* main */
+
+/* footer */
+
+footer {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+footer ul {
+    display: flex;
+    background-color: #21C08B;
+    justify-content: space-between;
+    list-style: none;
 }
