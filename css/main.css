@@ -12,43 +12,109 @@ button {
 
 /* Inicio del codigo */
 
-/* header */
-header {
-    background-color: #21C08B;
+/* Parametros globales---------------------------------------- */
+
+.globalWidth {
+    width: 100%;
 }
 
-header nav {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.globalBackgroundColor {
+    background-color: #834dfb;
+}
+
+.globalFont {
+    font-family: 'Mulish', sans-serif;
     color: white;
     font-weight: bold;
-    display: flex;
-    justify-content: space-between;
 }
 
-header nav img {
+/* Body------------------------------------------------------ */
+
+
+/* header---------------------------------------------------- */
+
+/* Barra de navegacion */
+.header .header__menu {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+/* logotipo */
+.header .header__menu .header__menu--logo {
     height: 100px;
 }
 
-header nav ul {
+/* menu perfil */
+
+.perfil__avatar {
+    display: flex;
+}
+
+.perfil__avatar p {
+    margin: auto 5px;
+}
+
+.menu__perfil .perfil__avatar--imagen {
+    width: 80px;
+}
+
+.menu__perfil ul {
+    display: none;
     list-style: none;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 10px;
+    position: absolute;
+    text-align: right;
 }
 
-/* main */
+.menu__perfil:hover ul {
+    display: block;
+}
 
-/* footer */
+.menu__perfil ul li {
+    margin: 10px 0px;
+}
 
-footer {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.menu__perfil ul li a {
+    text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-family: 'Mulish', sans-serif;
 }
+
+.menu__perfil ul li a:hover {
+    text-decoration: underline;
+}
+
+/* main------------------------------------------------------ */
+.principal {
+    font-size: 30px;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.principal input {
+    border-radius: 20px;
+    width: 80%;
+    height: 40px;
+    border: 2px solid white;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+
+}
+
+::placeholder {
+    color: white;
+    font-size: 20px;
+}
+
+/* footer---------------------------------------------------- */
 
 footer ul {
     display: flex;
-    background-color: #21C08B;
-    justify-content: space-between;
+    justify-content: space-evenly;
     list-style: none;
 }
