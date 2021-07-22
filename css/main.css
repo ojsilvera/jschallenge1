@@ -87,13 +87,19 @@ button {
 }
 
 /* main------------------------------------------------------ */
+/* principal principal__finder */
 .principal {
-    font-size: 30px;
-    text-align: center;
     margin: 40px 0px;
+    width: 100%;
 }
 
-.principal input {
+.principal .principal__finder {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.principal .principal__finder input {
     border-radius: 20px;
     width: 80%;
     height: 40px;
@@ -109,6 +115,88 @@ button {
 ::placeholder {
     color: white;
     font-size: 20px;
+}
+
+/* principal principal__title */
+
+.principal__title {
+    margin-left: 20px;
+}
+
+/* principal principal__corousel */
+
+
+.principal .principal__carousel {
+    width: 100%;
+    overflow: scroll;
+    padding: 70px 0px 70px 20px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.carousel-item {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 20px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: tomato;
+    transition: 450ms all;
+    transform-origin: center left;
+    position: relative;
+}
+
+.carousel-item:hover~.carousel-item {
+    transform: translate3d(100px, 0px, 0px);
+}
+
+.principal__carousel:hover .carousel-item {
+    opacity: 0.3;
+}
+
+.principal__carousel:hover .carousel-item:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+
+.carousel-item__imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-item__details {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0)100%);
+    font-size: 10px;
+    opacity: 1;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.principal__carousel:hover .carousel-item:hover .carousel-item__details {
+    opacity: 1;
+}
+
+.carousel-item__detailsicons {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 5px;
+}
+
+.carousel-item__detailsicons img {
+    width: 10%;
+    height: 50%;
+    bottom: 0px;
 }
 
 /* footer---------------------------------------------------- */
