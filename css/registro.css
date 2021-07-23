@@ -1,7 +1,6 @@
 .registro {
     align-items: center;
     background: linear-gradient(#834dfb, #21C08B);
-    padding: 0px 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,7 +13,7 @@
     border: 2px solid white;
     border-radius: 40px;
     width: 500px;
-    min-height: 900px;
+    min-height: 700px;
     background-color: rgba(255, 255, 255, 0.1);
     padding: 60px 68px 40px;
     display: flex;
@@ -83,4 +82,13 @@
 .footer {
     background-color: #21C08B;
 
+}
+
+@media only screen and (max-width: 600px) {
+    .registro__container {
+        background: transparent;
+        border: none;
+        padding: 0px;
+        width: 100%;
+    }
 }
