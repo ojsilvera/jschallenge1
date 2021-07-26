@@ -31,6 +31,11 @@ button {
 /* Body------------------------------------------------------ */
 
 
+/* oculta la barra de scroll sin desactivarta */
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* header---------------------------------------------------- */
 
 /* Barra de navegacion */
@@ -92,6 +97,7 @@ button {
 .principal {
     margin: 40px 0px;
     width: 100%;
+
 }
 
 .principal .principal__finder {
@@ -133,6 +139,7 @@ button {
     padding: 70px 0px 70px 20px;
     position: relative;
     white-space: nowrap;
+    overflow-y: hidden;
 }
 
 .carousel-item {
@@ -153,8 +160,12 @@ button {
     transform: translate3d(100px, 0px, 0px);
 }
 
-.principal__carousel:hover .carousel-item {
+.principal__carousel:hover .carousel-item .carousel-item__details {
     opacity: 0.3;
+}
+
+.principal__carousel:hover .carousel-item:hover .carousel-item__details {
+    visibility: visible;
 }
 
 .principal__carousel:hover .carousel-item:hover {
@@ -179,6 +190,7 @@ button {
     left: 0px;
     right: 0px;
     bottom: 0px;
+    visibility: hidden;
 }
 
 .principal__carousel:hover .carousel-item:hover .carousel-item__details {
