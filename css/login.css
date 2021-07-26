@@ -1,7 +1,6 @@
 .login {
     align-items: center;
     background: linear-gradient(#834dfb, #21C08B);
-    padding: 0px 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,5 +111,15 @@
 
 .footer {
     background-color: #21C08B;
+}
 
+
+@media only screen and (max-width: 600px) {
+    .login__container {
+        width: 100%;
+        padding: 20px;
+        border: none;
+        border-radius: 0px;
+        background-color: transparent;
+    }
 }
